@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="Rating Test Script.js"></script>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Rating Test CSS.css">
+<style>
+.checked {
+    color: orange;
+}
+</style>
+</head>
+<body>
+
+
+<h1>TasteBud</h1>
+<p>Please rate your food.</p>
+
+<div class="star-rating">
+	<input id="star-5" type="radio" name="rating" value="star-5">
+	<label for="star-5" title="5 stars">
+		<i class="active fa fa-star" aria-hidden="true"></i>
+	</label>
+	<input id="star-4" type="radio" name="rating" value="star-4">
+	<label for="star-4" title="4 stars">
+		<i class="active fa fa-star" aria-hidden="true"></i>
+	</label>
+	<input id="star-3" type="radio" name="rating" value="star-3">
+	<label for="star-3" title="3 stars">
+		<i class="active fa fa-star" aria-hidden="true"></i>
+	</label>
+	<input id="star-2" type="radio" name="rating" value="star-2">
+	<label for="star-2" title="2 stars">
+		<i class="active fa fa-star" aria-hidden="true"></i>
+	</label>
+	<input id="star-1" type="radio" name="rating" value="star-1">
+	<label for="star-1" title="1 star">
+		<i class="active fa fa-star" aria-hidden="true"></i>
+	</label>
+</div>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="netid">Net ID</label>
+    <input type="text" id="netid" name="netid" placeholder="Your net ID..">
+
+    <label for="meal">Meal Type</label>
+    <select id="meal" name="meal">
+      <option value="entree">Entree</option>
+      <option value="appetizer">Appetizer</option>
+      <option value="side">Side</option>
+      <option value="drink">Drink</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>
